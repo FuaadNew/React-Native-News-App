@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# News Reader App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a simple **News Reader** app built with **React Native** that fetches real-time news from the **News API**. The app allows users to read news articles based on different categories such as General, Business, Technology, and Sports. Users can also click on a news item to see more details in a modal and visit the full article.
 
-## Get started
+## Features
+- Fetches news articles from the News API based on user-selected categories.
+- Supports categories such as General, Business, Technology, and Sports.
+- Displays a list of articles with images, descriptions, and categories.
+- Users can click on "Read more" to see a detailed modal with the full content of the article.
+- Allows users to filter the news by category using a picker.
+- Uses **React Native**, **Axios** for API calls, and **React Native Elements** for UI components.
 
-1. Install dependencies
+## Screenshots
+![News Reader App](link_to_screenshot)
 
-   ```bash
-   npm install
-   ```
+## Installation
 
-2. Start the app
+### Prerequisites
+1. **Node.js** and **npm** (Node Package Manager)
+2. **Expo CLI** (if you're using Expo)
+3. **React Native Development Environment** set up (if you're not using Expo)
 
-   ```bash
+### Steps to Run the App
+
+1. Clone this repository to your local machine:
+    ```bash
+    git clone https://github.com/yourusername/news-app.git
+    ```
+
+2. Navigate to the project directory:
+    ```bash
+    cd news-app
+    ```
+
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Install additional packages for React Native Elements and Axios:
+    ```bash
+    npx expo install react-native-elements react-native-picker-select axios
+    ```
+
+5. Start the app:
+    ```bash
     npx expo start
-   ```
+    ```
 
-In the output, you'll find options to open the app in a
+    This will start the Expo development server. You can now run the app on an Android/iOS emulator or on a physical device using the Expo Go app.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+    For iOS (if you're using a physical device or simulator):
+    ```bash
+    npx react-native run-ios
+    ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+    For Android:
+    ```bash
+    npx react-native run-android
+    ```
 
-## Get a fresh project
+6. Open the app in the browser using `w` in the terminal.
 
-When you're ready, run:
+## Usage
 
-```bash
-npm run reset-project
-```
+1. Upon launching the app, users will be presented with a **News Category Picker** to filter news by General, Business, Technology, or Sports.
+2. The app fetches and displays the latest articles in the selected category.
+3. Each article has a title, description, image, and category.
+4. Clicking on "Read More" will open a modal with detailed content and a link to the full article.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Technologies Used
+- **React Native**: For building the mobile app.
+- **Axios**: To make HTTP requests to the News API.
+- **React Native Elements**: For UI components like cards, buttons, and icons.
+- **React Navigation**: For navigation between different screens (if applicable).
+- **News API**: To fetch real-time news articles.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
